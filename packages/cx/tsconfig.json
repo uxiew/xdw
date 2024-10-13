@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "composite": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "preserveConstEnums": true,
+    "removeComments": false,
+    "strict": true,
+    "target": "es2020",
+    "outDir": "dist",
+    "rootDir": "src"
+  },
+  "include": [
+    "**/*.ts",
+  ]
+}

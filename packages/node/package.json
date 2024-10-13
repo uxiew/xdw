@@ -1,0 +1,31 @@
+{
+  "name": "@xdw/jsr",
+  "author": "ChandlerVer5",
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "version": "0.0.1",
+  "keywords": [
+    "cd",
+    "shell"
+  ],
+  "sideEffects": false,
+  "bin": {
+    "cx": "bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uxiew/xdw.git",
+    "directory": "packages/node"
+  },
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^0.34.0"
+  }
+}

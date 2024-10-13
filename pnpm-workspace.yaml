@@ -1,0 +1,4 @@
+  packages:
+    - packages/*
+  catalog:
+    "gogocode": "^1.0.55"

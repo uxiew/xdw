@@ -1,0 +1,36 @@
+{
+  "name": "@xdw/shared",
+  "version": "0.0.1",
+  "author": {
+    "name": "ChandlerVer5",
+    "url": "https://github.com/uxiew"
+  },
+  "type": "module",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./copy": {
+      "import": "./dist/copy/index.mjs",
+      "require": "./dist/copy/index.cjs",
+      "types": "./dist/copy/index.d.ts"
+    },
+    "./shell": {
+      "import": "./dist/shell/index.mjs",
+      "require": "./dist/shell/index.cjs",
+      "types": "./dist/shell/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "unbuild",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "default-shell": "^2.2.0"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "@xdw/cx",
+  "version": "0.0.1",
+  "description": "Run shell command in a folder without changing the current directory",
+  "author": "ChandlerVer5",
+  "license": "MIT",
+  "main": "./dist/executor.js",
+  "types": "./dist/executor.d.js",
+  "engines": {
+    "node": ">=18.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uxiew/xdw.git",
+    "directory": "packages/cx"
+  },
+  "bugs": {
+    "url": "https://github.com/uxiew/xdw/issues"
+  },
+  "bin": {
+    "cx": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "cd",
+    "command",
+    "shell",
+    "execa"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "test": "vitest",
+    "build": "unbuild",
+    "prepublishOnly": "pnpm run build"
+  },
+  "devDependencies": {
+    "vitest": "^0.34.0"
+  },
+  "dependencies": {
+    "@xdw/shared": "workspace:*",
+    "picocolors": "^1.1.0"
+  }
+}
